@@ -1,0 +1,268 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+* {
+  margin: 0;
+}
+/*common styles or utilities*/
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  border: 0;
+  padding: 18px 35px;
+  height: 64px;
+  background: #fd6e0a;
+  border-radius: 5px;
+}
+.btn-secondary {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 40px;
+  border: 0;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 75%;
+  left: -10%;
+  background: #fd6e0a;
+}
+main {
+  background-color: white;
+}
+/* Beginning section */
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-header {
+  font-weight: 700;
+  font-size: 45px;
+  margin-top: 50px;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #424242;
+}
+.intro-detail {
+  text-align: center;
+}
+.header-2 {
+  font-weight: 700;
+  font-size: 64px;
+  margin-top: 102px;
+}
+.intro-para {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-top: 50px;
+  margin-bottom: 32px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+/* Main section*/
+
+/*List of features*/
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-img {
+  margin-top: 85px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 24px;
+  row-gap: -50px;
+  margin-left: 301px;
+}
+
+.fill1 {
+  color: #727272;
+}
+.fill2 {
+  color: #ff900e;
+}
+.img-feat {
+  width: 342px;
+  height: 342px;
+}
+.feature-list {
+  margin-top: 287px;
+  margin-right: 301px;
+}
+.section-header1 {
+  font-weight: 800;
+  font-size: 45px;
+  margin-top: 75px;
+}
+
+/* Enjoyable Features */
+.en-features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.description {
+  margin-left: 250px;
+}
+.shadow-box {
+  background: #ffffff;
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+  width: 586px;
+  height: 171px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.img-feat2 {
+  width: 700px;
+  height: 982px;
+}
+.img-and-btn {
+  position: relative;
+  margin-right: 150px;
+}
+
+/* Facts Section */
+
+.facts {
+  margin-left: 240px;
+  margin-top: 100px;
+}
+.achievements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.achievement-info {
+  width: 250px;
+  height: 250px;
+  margin-top: 50px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  /* transition: ease-in; */
+}
+.achievement-info img {
+  width: 45px;
+  height: 45px;
+}
+
+#magic:hover {
+  background-color: darkgoldenrod;
+  transform: scale(0.8);
+}
+#magic {
+  transition: 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.head-3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.para-2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #727272;
+}
+
+/* Sporsors Section */
+
+.sponsor {
+  margin-top: 150px;
+  text-align: center;
+}
+.sponsor-partners {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 220px;
+  margin-right: 220px;
+}
+.sponsor-img img {
+  width: 150px;
+  height: 45px;
+  margin-bottom: 200px;
+  mix-blend-mode: luminosity; /*For changing the colour of the image*/
+}
+
+/*Footer section*/
+
+footer {
+  background-color: white;
+  width: 100%;
+}
+.outro {
+  text-align: center;
+  padding-top: 40px;
+  border: 1px solid black;
+  width: 1440px;
+  height: 100px;
+  margin-left: 240px;
+  margin-right: 240px;
+
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* Making the site small device responsive */
+
+/* For Mobile users */
+@media only screen and (max-width: 688px) {
+  .intro,
+  .achievement,
+  .features,
+  .en-features,
+  .facts {
+    display:block;
+  }
+
+  .feature-img{
+    grid-template-columns: repeat(1, 1fr);
+   margin-left:-200px;
+    
+  }
+  .achievements,.section-header1,.intro-para,.description,.sponsor{
+    flex-direction: column;
+ 
+  }
+  .shadow-box{
+    margin-left: -200px;
+    flex-wrap: wrap;
+  }
+  .sponsor-partners{
+    flex-direction: column;
+  }
+  .outro{
+    margin-left:-470px;
+
+    
+  }
+
+}
